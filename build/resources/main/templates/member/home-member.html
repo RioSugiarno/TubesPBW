@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Wombat Concert</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <!-- Header -->
+  <div th:replace="~{member/fragment/header :: header}"></div>
+
+  <!-- Main -->
+  <section class="hero" style="background-image: url('/images/concert-bg.jpeg');">
+    <h1>Temukan Set List Konser Favoritmu!</h1>
+    <h2>Cari Artis Favoritmu!</h2>
+    <button id="searchButton"> <a href="search">Cari Sekarang</a></button>
+  </section>
+  <section class="featured">
+    <h2>Artis Populer</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/images/brunomars.jpeg" alt="Bruno Mars">
+        <h3>Bruno Mars</h3>
+      </div>
+      <div class="card">
+        <img src="/images/ariana.jpeg" alt="Ariana Grande">
+        <h3>Ariana Grande</h3>
+      </div>
+      <div class="card">
+        <img src="/images/theweekend.jpeg" alt="The Weekend">
+        <h3>The Weekend</h3>
+      </div>
+    </div>
+  </section>
+  <section class="aboutus">
+    <h2>About Us</h2>
+    <p>Selamat datang di Wombat Concert, platform terbaik bagi penggemar musik untuk menemukan informasi lengkap tentang konser, artis, dan daftar lagu (setlist). Kami berdedikasi untuk menciptakan pengalaman yang nyaman bagi komunitas pecinta seni, dari penikmat biasa hingga penggemar berat konser, dengan menghadirkan data akurat dan mudah diakses untuk mendekatkan Anda ke dunia pertunjukan langsung. <br>
+    </br>
+      Wombat Concert menawarkan fitur menarik bagi pengunjung, anggota, dan admin. Pengunjung dapat menjelajahi informasi konser dan setlist, sementara anggota memiliki kebebasan untuk menambahkan data artis, konser, dan bukti pendukung. Admin juga berperan penting dalam menjaga ketertiban komunitas. Dengan visi menjadi platform terdepan untuk informasi konser, kami percaya bahwa musik adalah bahasa universal yang menyatukan semua orang. Mari rayakan keajaiban musik bersama!</p>
+  </section>
+
+  <!-- Footer -->
+  <div th:replace="~{member/fragment/footer :: footer}"></div>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
